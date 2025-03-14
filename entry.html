@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Entry - VRNC</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="VRNC Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="entry.html">Company Entry</a></li>
+                <li><a href="responses.html">View Responses</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="login.html" id="login-link">Login</a></li>
+                <li><a href="signup.html" id="signup-link">Sign Up</a></li>
+                <li><a href="#" id="logout-link" style="display: none;" onclick="logout()">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Company Details Entry Form</h1>
+        <form id="company-form" onsubmit="submitForm(event)">
+            <label for="company-name">Company Name:</label>
+            <input type="text" id="company-name" name="company-name" required>
+            <label for="company-ceo">CEO/Person In Charge:</label>
+            <input type="text" id="company-ceo" name="company-ceo" required>
+            <div id="facilities">
+                <h3>Facilities</h3>
+                <button type="button" onclick="addFacility()">Add Facility</button>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 VRNC. All rights reserved.</p>
+    </footer>
+</body>
+</html>
